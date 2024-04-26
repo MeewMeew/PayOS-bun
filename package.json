@@ -1,0 +1,36 @@
+{
+  "name": "@meewmeew/payos-bun",
+  "version": "1.0.0-alpha.1",
+  "module": "build/index.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "type": "module",
+  "engines": {
+    "bun": ">=1.1.4",
+    "node": ">=20.0.0"
+  },
+  "homepage": "https://github.com/meewmeew/payos-bun",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meewmeew/payos-bun.git"
+  },
+  "scripts": {
+    "prepublish": "bun run build",
+    "build": "bun run ./script/build.ts"
+  },
+  "keywords": [
+    "payos",
+    "casso",
+    "vietqr",
+    "vietqrpro",
+    "vietnam qrpay",
+    "meewmeew"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-plugin-dts": "^0.2.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
